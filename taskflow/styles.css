@@ -1,0 +1,203 @@
+/* RESET BOOTSTRAP OVERRIDES */
+body {
+  margin-left: 220px;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+body.collapsed-body {
+  margin-left: 70px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: #141414;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar .sidebar-header h4 {
+  color: #06d606;
+  margin: 0;
+}
+
+/* Nav */
+.sidebar .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.sidebar .navbar-nav li {
+  margin: 8px 0;
+}
+
+.sidebar .navbar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #046424;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Force icons to use theme color */
+.sidebar .navbar-nav a i {
+  font-size: 18px;
+  color: #088b08 !important;
+}
+/* Hover effect */
+.sidebar .navbar-nav a:hover {
+  background: #088b08 !important;
+  color: #ffffff !important;
+}
+
+.sidebar .navbar-nav a:hover i {
+  color: #f8f8f8 !important;
+}
+
+/* Active state */
+.sidebar .navbar-nav a.active {
+  background: #000 !important;
+  color: #29d855 !important;
+}
+
+.sidebar .navbar-nav a.active i {
+  color: #29d855 !important;
+}
+
+/* Collapsed mode hides link text */
+.sidebar.collapsed .link-text {
+  display: none;
+}
+
+/* Content area */
+.content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+body.collapsed-body .content {
+  margin-left: 70px;
+}
+
+/* Cards */
+.card {
+  background: #141414 !important;
+  border-radius: 10px;
+  color: white !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Text utilities */
+.pg {
+  font-size: 13px;
+}
+.earn {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 1px 0;
+  color: #088b08;
+}
+
+/* Table */
+table {
+  background-color: transparent !important;
+  color: #fff;
+}
+.mark {
+  background: #141414;
+  color: #088b08;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btt {
+  background-color: transparent !important;
+  font-size: 18px;
+  font-weight: bold;
+  color: #088b08 !important;
+  cursor: pointer;
+  border: none !important;
+}
+.btt:hover {
+  background-color: #088b08 !important;
+  color: #fff !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #fefefe !important;
+  color: black !important;
+  border-radius: 12px;
+  padding: 24px;
+}
+.btn-close {
+  filter: invert(1); /* makes close button visible on dark bg */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    margin-left: 0 !important;
+  }
+  .sidebar {
+    left: -220px;
+  }
+  .sidebar.show {
+    left: 0;
+  }
+  .content {
+    margin-left: 0 !important;
+  }
+}
+/* Toggle button */
+#toggle-btn {
+  background-color: transparent !important;
+  border: none !important;
+  color: #088b08 !important;
+  font-size: 20px;
+  cursor: pointer;
+}
+#toggle-btn:hover {
+  color: #29ff69 !important;
+}
+#toggle-btn:focus {
+  outline: none !important;
+}
+#toggle-btn i {
+  font-size: 24px;
+}
+#toggle-btn:hover i {
+  color: #29ff69 !important;
+}
+#toggle-btn:focus i {
+  outline: none !important;
+}
+.profile{
+  background-color: bisque;
+  width: 20px;
+  border-radius: 50%;
+}
