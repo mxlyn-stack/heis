@@ -42,14 +42,14 @@ require_once "db.php";
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body class="bg-success">
+<body class="bg-black">
   <div>
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="card shadow-lg  bg-white">
             <div class="card-body">
-              <h3 class="text-center mb-4"><i class="bi bi-"></i> TaskFlow</h3>
+              <img src=" ChatGPT Image Sep 15, 2025, 08_55_18 PM.png" class="logo w-25">
               <?php if (!empty($message)): ?>
                 <div class="alert alert-danger"><?php echo $message; ?></div>
               <?php endif; ?>
@@ -68,7 +68,7 @@ require_once "db.php";
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control" name="pword" id="password" required>
+                  <input type="password" class="form-control bg-black" name="pword" id="password" required>
                   <input type="checkbox" onclick="togglePassword()"> Show Password
                 </div>
                 <button type="submit" id="registerBtn" class=" btn btn-success w-100">Sign Up</button>

@@ -7,8 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">                     
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="bg-black">
   <div class="container mt-5">
+    <div class="col-md-6">
     <div class="card shadow-lg">
       <div class="card-body">
         <form id="resetForm" method="post">
@@ -25,6 +26,7 @@
         <!-- Message area -->
         <div id="messageBox" class="mt-3"></div>
       </div>
+     </div>
     </div>
   </div>
 

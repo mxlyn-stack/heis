@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
-  <body>
+  <body class="bg-black">
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-6">
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                       }
                    ?>
               </div>
-              <h3 class="text-center mb-4"><i class="bi bi-"></i> TaskFlow</h3>
+              <img src=" ChatGPT Image Sep 15, 2025, 08_55_18 PM.png" class="logo w-25">
               <form id="loginForm" method="post">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>
@@ -74,6 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="mb-3">
                   <label for="password" class="form-label">Password</label>
                   <input type="password" class="form-control" name="password" id="password" required>
+                  <input type="checkbox" onclick="myFunction()">Show Password 
                 </div>
                 <button type="submit" id="loginBtn" class="btn btn-success w-100">Login</button>
               </form>
@@ -97,6 +98,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           Logging in...
         `;
       });
+      function myFunction() {
+        const passwordField = document.getElementById("password");
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+        } else {
+          passwordField.type = "password";
+        }
+      }
      </script>
   </body>
 </html>
